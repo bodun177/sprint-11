@@ -1,11 +1,14 @@
-import Cart from './components/Cart';
-import Layout from './components/Layout';
-import Products from './components/Shop';
+import { useSelector } from "react-redux";
+import Cart from "./components/Cart";
+import Layout from "./components/Layout";
+import Products from "./components/Shop";
 
 function App() {
+  const cartIsVisible = useSelector((state) => state.ui.cartIsVisible);
+
   return (
     <Layout>
-      <Cart />
+      {cartIsVisible && <Cart />}
       <Products />
     </Layout>
   );
