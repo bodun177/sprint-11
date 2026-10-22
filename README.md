@@ -7,7 +7,7 @@ Please, use the *store* folder and JS files within it to define multiple state s
 2) **cart_slice.js** will be used for managing the cart;
 3) **index.js** will set up Redux store;
 
-Description.
+Description .
 1) **ui_slice.js** When the user clicks button ‘My Cart’, the cart area should be toggled on the page. You have to create slice function and set up some initial state (e.g., *cartIsVisible* property is *false*) within this file. 
 Slice function will contain only one method (*toggle()*), which receives the old state and where it sets state *cartIsVisible* to the opposite of what it was.
 Add an ‘on click’ listener to the Cart button component (*Cart* folder, *cart.js*) so, that when 'Cart' button is clicked the cart area is shown (or not).
